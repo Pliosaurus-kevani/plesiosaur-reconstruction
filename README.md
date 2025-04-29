@@ -8,14 +8,9 @@ are also included here as .zip packages.
 
 The folder **"phylogeny"** contains the tree files constructed using a Bayesian method (implemented in [RevBayes](https://revbayes.github.io/)),
 which will be described in detail in another recent publication of mine.
+It contains the maximum clade credibility tree and 100 trees randomly selected from the post burn-in Bayesian samples.
 
-The folder "scripts" contains the R scripts required to reproduce the analyses and figures.
-**The script "load and save trees.R"  must be run to produce an initial "plesiosaur trees.RData" object.**
-
-**load and save trees.R**
->This script reads the post burn-in tree samples computed using Bayesian inference and the maximum clade credibility
->tree summarized using [RevBayes](https://revbayes.github.io/). It randomly selects 100 trees and save them in the
->object "plesiosaur trees.RData".
+The folder **"scripts"** contains the R scripts required to reproduce the analyses and figures.
 
 **restoration_PGLS & OLS.R**
 >This script fits regression models using ordinary least squares (OLS), phylogenetic generalized least squares (PGLS)
