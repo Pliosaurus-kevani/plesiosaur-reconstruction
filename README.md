@@ -2,13 +2,17 @@
 Code repository for Zhao 2025, run in R version 4.3.3.  
 This repository contains commented code to enable readers to reproduce the analyses conducted in Zhao 2025.
 
-The folder **"data"** contains the .csv files required in the R scripts.
-The variable-rate model parameters computed by [BayesTraits 4.0.0](https://www.evolution.reading.ac.uk/BayesTraitsV4.0.0/BayesTraitsV4.0.0.html)
-are also included here as .zip packages.
+The folder **"data"** contains the .csv files required in the R scripts. The folder **"raw"** consists of the .xlsx files
+containing the raw data. The detailed references of the data sources were submitted as part of the supplementary material of the article. 
 
 The folder **"phylogeny"** contains the tree files constructed using a Bayesian method (implemented in [RevBayes](https://revbayes.github.io/)),
 which will be described in detail in another recent publication of mine.
-It contains the maximum clade credibility tree and 100 trees randomly selected from the post burn-in Bayesian samples.
+It contains the maximum clade credibility tree and 100 trees randomly selected from the post burn-in Bayesian samples (available as a .RData file).
+
+The variable-rate model described in the article was implemented in [BayesTraits 4.0.0](https://www.evolution.reading.ac.uk/BayesTraitsV4.0.0/BayesTraitsV4.0.0.html). To reproduce the results generated in this study, you need to download [BayesTraits 4.0.0](https://www.evolution.reading.ac.uk/BayesTraitsV4.0.0/BayesTraitsV4.0.0.html) and its post-processor (see the [manual](https://www.evolution.reading.ac.uk/BayesTraitsV4.0.0/Files/BayesTraitsV4.0.0-Manual.pdf) of BayesTraits for detailed guidance), then produce the command files using the R script "**generate files for BayesTraits.R**". Both the heterogeneous model and the homogeneous model replicated on 100 trees will take a few hours to run. After that, run the post-processor, and obtain the results using the R scripts "**convergence and log Bayes Factors.R**" and "**BayesTraits_plots.R**".
+
+
+
 
 The folder **"scripts"** contains the R scripts required to reproduce the analyses and figures.
 
