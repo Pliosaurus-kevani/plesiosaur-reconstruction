@@ -381,21 +381,10 @@ for(i in 1:nrow(com.data))
 
 #plot
 
-#define isometry
-
-eq = function(x){x}
-
-label_text <- 
-paste(
-  "P = 0.466"
-)
-
 com.plot <- 
   ggplot(data = PE.compare, aes(x = trunk, y = DDV))+
   geom_point(color = "black", size = 2.5)+
   labs(x = "% prediction error (trunk)", y = "% prediction error (dorsal centrum volume)")+
-  #geom_smooth(method = lm, se = F, aes(color = "OLS"))+
-  #stat_function(fun= eq, aes(color = "isometry"), linetype = "dotted", lwd = 1)+
   theme(plot.title = element_text(size = 15, face = "bold", hjust = 0.5), 
         axis.title = element_text(size = 15),
         #axis.text = element_blank(), 
@@ -410,3 +399,4 @@ com.plot <-
 com.plot
 
 ggsave("prediction error.pdf", com.plot, width = 8, height = 6)
+
