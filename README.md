@@ -15,7 +15,9 @@ The folder **"scripts"** contains the R scripts required to reproduce the analys
 **restoration_PGLS & OLS.R**
 >This script fits regression models using ordinary least squares (OLS), phylogenetic generalized least squares (PGLS)
 >or a nonlinear function (log-logistic) to reconstruct the missing puzzles in plesiosaur reconstruction.
+>It also generates the figure 8 in the manuscript.
 
 **find proxy_OLS & PGLS.R**
 >This script fits regression models using ordinary least squares (OLS) and phylogenetic generalized least squares (PGLS)
 >to evaluate the performance of various skeletal structures as mass proxies.
+>It also generates the figure 6 in the manuscript.
