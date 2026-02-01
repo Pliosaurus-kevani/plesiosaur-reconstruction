@@ -523,14 +523,15 @@ setNames(c(mean(PE.tail[,1]), mean(PE.tail[,2]), mean(PE.tail[,3]), mean(PE.tail
 eq_LL = function(x){(1.2808)/(1+((x/1.5844)^10.2843))-1.4398}
 eq_PGLS = function(x){-1.4695*x+1.5560}
 
-label_text <- 
+label_AICc <- 
 paste(
   "AICc (LL) = -94.18\n",
   "AICc (OLS) = -69.10\n",
-  "AICc (PGLS) = -74.48\n \n",
-  "RSE (LL) = 0.062\n",
-  "RSE (OLS) = 0.090\n",
-  "RSE (PGLS) = 0.134"
+  "AICc (PGLS) = -74.48\n",
+  "\n",
+  "mean |%PE| (LL) = 11.92\n",
+  "mean |%PE| (OLS) = 18.63\n",
+  "mean |%PE| (PGLS) = 19.00"
 )
 
 SKL_plot <- 
@@ -551,10 +552,10 @@ SKL_plot <-
   annotate(
     "text",
     x = 1.8, y = Inf,          
-    label = label_text,
+    label = label_AICc,
     hjust = 1, vjust = 1.1,  
     size = 3.5,                
-    color = "black"
+    color = "black",
   )
   
 print(SKL_plot)
@@ -564,3 +565,4 @@ print(SKL_plot)
 #setwd()
 
 ggsave("skull-neck.pdf", SKL_plot, width = 8, height = 6)
+
