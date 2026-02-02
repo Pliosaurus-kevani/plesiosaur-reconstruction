@@ -3,7 +3,7 @@ Code repository for Zhao 2025, run in R version 4.3.3.
 This repository contains commented code to enable readers to reproduce the analyses conducted in Zhao, 2025.
 
 The folder **"data"** contains the files required in the R scripts. The folder **"raw"** consists of the .xlsx files
-containing the raw data. The detailed references of the data sources were submitted as part of the supplementary material of the article. Note that all species names in the dataset have been standardized to match those in the phylogeny, if they are present in the tree. Any discrepancies with recent taxonomic revisions do not represent the author's opinion on taxonomy.
+containing the raw data and a PDF file containing the references. The detailed references of the data sources were submitted as part of the supplementary material of the article. Note that all species names in the dataset have been standardized to match those in the phylogeny, if they are present in the tree. Any discrepancies with recent taxonomic revisions do not represent the author's opinion on taxonomy.
 
 The file **"consensus.nex"** is the strict consensus tree from [Sachs & Madzia, 2025](https://doi.org/10.7717/peerj.19665) (using implied weighting, K = 12).
 
